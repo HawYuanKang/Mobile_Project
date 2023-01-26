@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityLabtest">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView_first"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Glazed Donut RM3.50 pc"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/editTextItem1Quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint=" Item Quantity eg: 2, 3, 5"
+            android:inputType="textPersonName" />
+
+        <ImageView
+            android:id="@+id/imageView_second"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stuffed Bomboloni RM2.50 pc"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/editTextItem2Quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint=" Item Quantity eg: 2, 3, 5"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="fn_calculate"
+            android:text="Calculate" />
+
+        <TextView
+            android:id="@+id/textView_totalitem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total item: " />
+
+        <TextView
+            android:id="@+id/textView_totalprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total price to pay: RM " />
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
