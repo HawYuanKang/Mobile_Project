@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SecondActivity" >
+
+    <TextView
+        android:id="@+id/UserName"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/UserPwd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/UserEmail"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/UserBirth"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/UserAddress"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/UserGender"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="TextView" />
+</LinearLayout>
+    </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_menu"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>
